@@ -5,7 +5,8 @@
 namespace gsim::core {
 
 /// Semantic version of the simulation library.
-struct Version {
+struct Version
+{
     int major{};
     int minor{};
     int patch{};
