@@ -1,0 +1,12 @@
+add_executable(gsim_app)
+
+target_sources(gsim_app
+    PRIVATE
+        main.cpp)
+
+target_link_libraries(gsim_app
+    PRIVATE
+        gsim::core
+        gsim::warnings)
+
+set_target_properties(gsim_app PROPERTIES OUTPUT_NAME "gsim")
