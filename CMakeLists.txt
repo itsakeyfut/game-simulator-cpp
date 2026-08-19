@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.28)
 
 project(gsim
     VERSION 0.1.0
-    DESCRIPTION "Headless 3D game simulation for learning C::, 3D math and game architecture"
+    DESCRIPTION "Headless 3D game simulation for learning C++, 3D math and game architecture"
     LANGUAGES CXX)
 
 # ---------------------------------------------------------------------------
