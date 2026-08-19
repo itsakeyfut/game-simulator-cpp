@@ -22,7 +22,7 @@ include(CompilerWarnings)
 # ---------------------------------------------------------------------------
 # Options
 # ---------------------------------------------------------------------------
-option(GSIM_BUILD_APP "Build the CLI application" ON)
+option(GSIM_BUILD_TESTS "Build the unit tests" ${PROJECT_IS_TOP_LEVEL})
 
 # ---------------------------------------------------------------------------
 # Subdirectories
@@ -31,6 +31,11 @@ add_subdirectory(src/core)
 
 if (GSIM_BUILD_APP)
     add_subdirectory(app)
+endif()
+
+if (GSIM_BUILD_TESTS)
+    enable_testing()
+    add_subdirectory(tests)
 endif()
 
 message(STATUS "gsim ${PROJECT_VERSION} / build type: ${CMAKE_BUILD_TYPE}")
