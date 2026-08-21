@@ -22,7 +22,9 @@ include(CompilerWarnings)
 # ---------------------------------------------------------------------------
 # Options
 # ---------------------------------------------------------------------------
+option(GSIM_BUILD_APP "Build the CLI application" ON)
 option(GSIM_BUILD_TESTS "Build the unit tests" ${PROJECT_IS_TOP_LEVEL})
+option(GSIM_ENABLE_ASSERTS "Force GSIM_ASSERT on, even in Release" OFF)
 
 # ---------------------------------------------------------------------------
 # Subdirectories
