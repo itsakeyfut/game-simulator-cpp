@@ -36,7 +36,6 @@ void report_assert_failure(std::string_view expression, std::string_view message
 
 }  // namespace gsim::core
 
-
 // ---------------------------------------------------------------------------
 // Macros
 //

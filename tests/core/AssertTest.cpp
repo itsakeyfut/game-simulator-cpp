@@ -36,7 +36,10 @@ protected:
         previous_ = gsim::core::set_assert_handler(&recording_handler);
     }
 
-    void TearDown() override { gsim::core::set_assert_handler(previous_); }
+    void TearDown() override
+    {
+        gsim::core::set_assert_handler(previous_);
+    }
 
 private:
     gsim::core::AssertHandler previous_{nullptr};
