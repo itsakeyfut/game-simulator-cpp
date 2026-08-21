@@ -47,4 +47,5 @@ endfunction()
 # Test targets
 # ---------------------------------------------------------------------------
 gsim_add_test(core_tests
+    core/AssertTest.cpp
     core/VersionTest.cpp)
