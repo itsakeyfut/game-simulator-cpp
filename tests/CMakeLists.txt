@@ -48,5 +48,6 @@ endfunction()
 # ---------------------------------------------------------------------------
 gsim_add_test(core_tests
     core/AssertTest.cpp
+    core/HandleTest.cpp
     core/LogTest.cpp
     core/VersionTest.cpp)
