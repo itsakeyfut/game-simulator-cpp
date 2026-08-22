@@ -4,6 +4,7 @@ add_library(gsim::core ALIAS gsim_core)
 target_sources(gsim_core
     PRIVATE
         src/Assert.cpp
+        src/Log.cpp
         src/Version.cpp)
 
 target_include_directories(gsim_core
